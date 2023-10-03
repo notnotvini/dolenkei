@@ -8,17 +8,26 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 <body>
-    <div class="containerOne">
-            <img class="cover" src="./images/cover.png" alt="Dolenkei">
-            <div class="menu">
-                <ul class="menuItems">
-                    <a href="./index.html"><li class="menu-inicio">Início</li></a>
-                    <a href="./portfolio.html"><li class="menu-portfolio">Portfólio</li></a>
-                    <a href="./artista.html"><li class="menu-artista">A Artista</li></a>
-                    <a href="./contato.html"><li class="menu-contato">Contato</li></a>
-                </ul>
-            </div>
+    <div class="home">
+        <a href="./index.html" title="Ir para a página inicial"><img class="mainImage" src="./images/cover.png"></a>
+        <nav class="menu">
+            <ul id="menuPages">
+                <li><a href="./index.html" title="Página de início">Início</a></li>
+                <li><a href="./portfolio.html" title="Página de portfólio">Portfólio</a></li>
+                <li><a href="./artista.html" title="Página de perfil da artista">A Artista</a></li>
+                <li><a href="./contato.html" title="Página de contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menuEnd"></div>
     </div>
-    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="errorWindow">
+        <p>Essa página não pode ser visualizada nesse tamanho de tela.</p>
+    </div>
+    <footer>
+        <div class="footer">
+            <p class="credits"><a href="./index.html">www.dolenkei.com.br</a> &copy; | <a href="https://pvcd.com.br" title="Desenvolvido por PVCD - Clique para visitar o site" target="_blank">PVCD</a></p>
+        </div>
+    </footer>
 </body>
 </html>

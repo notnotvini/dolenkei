@@ -10,35 +10,29 @@ a {
     text-decoration: none;
 }
 
-header {
-    background-color: #CC7B00;
-}
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px 50px;
-    max-width: 1280px;
-    margin: auto;
-    width: 100%;
+.home {
+    max-width: 720px;
+    margin: 0 auto;
     align-items: center;
-    background-color: #CC7B00;
 }
 
-.header img {
-    width: 150px;
+.home img {
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 20px;
 }
 
 .menu {
-    align-content: center;
+    margin: 0 auto;
+    align-items: center;
     text-align: center;
+    background-color: #8C3A46;
+    padding: 16px;
 }
 
 .menu ul {
+    padding: 0;
     list-style: none;
-    display: flex;
-    margin-block-end: 0px;
     gap: 16px;
 }
 
@@ -53,66 +47,23 @@ header {
     display: block;
     color: #000000;
     text-transform: uppercase;
-    background: #F8F0E3;
+    background: #DB9428;
 }
 
-#menuButton {
-    display: none;
-    width: 100px;
-    height: 60px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-    color: #000000;
-    text-transform: uppercase;
-    text-align: center;
-    background: #F8F0E3;
-    border: none;
-    box-sizing: border-box;
-}
-
-.main {
+#menuPages {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
-    padding: 25px;
+    margin: 0;
+    justify-content: center;
+}
+
+.menuEnd {
+    width: 100%;
     margin: auto;
-    margin-bottom: 40px;
-    gap: 30px;
-    box-sizing: border-box;
-}
-
-.mainContent {
-    width: 60%;
-}
-
-.mainImage {
-    width: 35%;
-    height: 510px;
-    background-image: url(./images/profile.png);
-    background-size: contain norepeat;
-    background-position: center 30%;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-}
-
-.mainImageMobile {
-    display: none;
-}
-
-h1 {
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-h1::after {
-    font-family:'Times New Roman', Times, serif;
-    color: #CC7B00;
-    font-size: 24px;
-    content: '\00a0 \00a0 \00a0 \00a0 \00a0 \25cf \00a0 \25cf \00a0 \25cf';
-}
-
-.main p {
-    margin-top: 25px;
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    background-color: #8DA7A5;
+    height: 16px;;
 }
 
 footer {
@@ -120,16 +71,11 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 45px;
+    height: 40px;
     color: #000000;
     background-color: #F8F0E3;
     text-align: center;
     font-size: 14px;
-}
-
-.footer {
-    position: relative;
-    margin: 12px;
 }
 
 .footer a {
@@ -141,29 +87,18 @@ footer {
     display: none;
 }
 
-#menuPages.active  {
-    display: block;
-    position: absolute;
-    top: 120px;
-    right: 3%;
-}
-
 /* Responsiveness */
 /* Window < 350px - Error */
 @media (max-width: 300px) {
     .header {
         display: none;
     }
-    
-    .mainContent {
+
+    .home {
         display: none;
     }
 
     .mainImage {
-        display: none;
-    }
-
-    .mainImageMobile {
         display: none;
     }
 
@@ -172,47 +107,29 @@ footer {
     }
 
     .errorWindow {
-        display: flex;
+        display: block;
+        position: relative;
+        align-items: center;
+        width: 90%;
         text-align: center;
-        margin-top: 30px;
+        left: 5%;
+        top: 5%;
+        font-family: 'Roboto Mono', sans-serif;
+        font-size: 14px;
     }
 }
 
 /* Window < 939px - Change Menu Style */
 @media (max-width: 939px) {
-    #menuButton {
-        display: block;
-        margin-left: 20%;
+    #mainImage {
+        align-items:start;
     }
 
-    #menuPages {
-        display: none;
-    }
-}
-
-/* Window < 799px - Adaptive Section */
-@media (max-width: 799px) {
-    .mainImage {
-        display: none;
-    }
-
-    .mainContent {
+    .menu {
         width: 90%;
     }
 
-    .mainImageMobile {
-        display: none;
-    }
-}
-
-/* Window < 400 - Change Menu Style */
-@media (max-width: 400px) {
-    #menuButton {
-        display: block;
-        margin-left: 20%;
-    }
-
-    .header img {
-        width: 100px;
+    .menuEnd {
+        width: 90%;
     }
 }
