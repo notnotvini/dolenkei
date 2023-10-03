@@ -143,9 +143,16 @@ footer {
     display: none;
 }
 
+#menuPages.active  {
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 3%;
+}
+
 /* Responsiveness */
-/* Window < 400px - Error */
-@media (max-width: 400px) {
+/* Window < 350px - Error */
+@media (max-width: 300px) {
     .header {
         display: none;
     }
@@ -177,6 +184,7 @@ footer {
 @media (max-width: 939px) {
     #menuButton {
         display: block;
+        margin-left: 20%;
     }
 
     #menuPages {
@@ -199,10 +207,17 @@ footer {
     }
 }
 
+/* Window < 400 - Change Menu Style */
+@media (max-width: 400px) {
+    #menuButton {
+        display: block;
+        margin-left: 20%;
+    }
 
-#menuPages.active  {
-    display: block;
-    position: absolute;
-    top: 120px;
-    right: 3%;
+    .header img {
+        width: 100px;
+    }
 }
+
+
+
