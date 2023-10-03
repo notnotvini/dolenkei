@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolenkei.com.br</title>
-    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./artista.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 <body>
     <header>
         <div class="header">
-            <img src="./images/logo.png" alt="Dolenkei">
+            <a href="./index.html" title="Ir para a página inicial"><img src="./images/logo.png"></a>
             <nav class="menu">
                 <button id="menuButton">Menu</button>
                 <ul id="menuPages">
                     <li><a href="./index.html" title="Página de início">Início</a></li>
                     <li><a href="./portfolio.html" title="Página de portfólio">Portfólio</a></li>
-                    <li><a href="./artista.html" title="Página de perfil da artista">A Artista</a></li>
+                    <li id="pageOpened"><a href="./artista.html" title="Página de perfil da artista">A Artista</a></li>
                     <li><a href="./contato.html" title="Página de contato">Contato</a></li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
     </main>
     <footer>
         <div class="footer">
-        <p class="credits"><a href="#">www.dolenkei.com.br</a> &copy; | <a href="https://pvcd.com.br" title="Desenvolvido por PVCD - Clique para visitar o site">PVCD</a></p>
+            <p class="credits"><a href="./index.html">www.dolenkei.com.br</a> &copy; | <a href="https://pvcd.com.br" title="Desenvolvido por PVCD - Clique para visitar o site" target="_blank">PVCD</a></p>
         </div>
     </footer>
     <script src="./js.js"></script>
