@@ -39,6 +39,7 @@ header {
     list-style: none;
     display: flex;
     margin-block-end: 0px;
+    gap: 16px;
 }
 
 .menu li {
@@ -55,8 +56,17 @@ header {
     background: #F8F0E3;
 }
 
-.menu li:nth-child(n + 2) {
-    margin-left: 16px;
+#menuButton {
+    display: none;
+    width: 100px;
+    height: 60px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    background: #F8F0E3;
+    border: none;
+    box-sizing: border-box;
 }
 
 .main {
@@ -68,6 +78,8 @@ header {
     margin: auto;
     margin-bottom: 40px;
     justify-content: center;
+    gap: 30px;
+    box-sizing: border-box;
 }
 
 .mainContent {
@@ -75,13 +87,16 @@ header {
 }
 
 .mainImage {
-    margin-left: 30px;
     width: 35%;
     height: 510px;
     background-image: url(./images/profile.png);
     background-size: contain norepeat;
     background-position: center 30%;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.mainImageMobile {
+    display: none;
 }
 
 h1 {
@@ -122,4 +137,72 @@ footer {
 .footer a {
     text-decoration: none;
     color: #000000;
+}
+
+.errorWindow {
+    display: none;
+}
+
+/* Responsiveness */
+/* Window < 400px - Error */
+@media (max-width: 400px) {
+    .header {
+        display: none;
+    }
+    
+    .mainContent {
+        display: none;
+    }
+
+    .mainImage {
+        display: none;
+    }
+
+    .mainImageMobile {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .errorWindow {
+        display: flex;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+/* Window < 939px - Change Menu Style */
+@media (max-width: 939px) {
+    #menuButton {
+        display: block;
+    }
+
+    #menuPages {
+        display: none;
+    }
+}
+
+/* Window < 799px - Adaptive Section */
+@media (max-width: 799px) {
+    .mainImage {
+        display: none;
+    }
+
+    .mainContent {
+        width: 90%;
+    }
+
+    .mainImageMobile {
+        display: none;
+    }
+}
+
+
+#menuPages.active  {
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 3%;
 }
