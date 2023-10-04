@@ -51,6 +51,8 @@ a {
     background: #DB9428;
 }
 
+
+
 #menuPages {
     display: flex;
     flex-wrap: wrap;
@@ -127,15 +129,11 @@ footer {
 
 /* Window < 939px - Change Menu Style */
 @media (max-width: 939px) {
-    #mainImage {
-        align-items:start;
-    }
-
     .menu {
-        width: 90%;
+        width: 50%;
     }
 
     .menuEnd {
-        width: 90%;
+        width: 50%;
     }
 }
