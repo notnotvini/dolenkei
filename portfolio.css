@@ -161,6 +161,7 @@ footer {
 
 .modal-header {
     border: 0;
+    padding-bottom: 0;
 }
 
 .modal-content {
