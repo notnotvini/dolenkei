@@ -83,6 +83,8 @@ header {
     margin-bottom: 40px;
     gap: 30px;
     box-sizing: border-box;
+    text-align: justify;
+    text-justify: auto;
 }
 
 .mainContent {

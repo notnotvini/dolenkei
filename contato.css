@@ -131,7 +131,11 @@ h1 {
 }
 
 h1:nth-child(n+2) {
-    margin-top: 25px;
+    margin-top: 50px;
+}
+
+.contactMail {
+    padding-top: 20px;
 }
 
 h1::after {
@@ -142,10 +146,16 @@ h1::after {
 }
 
 .main p {
-    margin-top: 25px;
+    margin-top: 10px;
     font-family: 'Roboto Mono', sans-serif;
     font-size: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+#contactItem p {
+    height: 70px;
+    margin-bottom: 0;
+    margin-top: 15px;
 }
 
 footer {
